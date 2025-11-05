@@ -40,7 +40,7 @@ public class App {
                 System.out.println("Filme:  - A Roda Quadrada - Classificação Livre");
                 System.out.println("Nome: " + nome + ", idade: " + idade);
                 System.out.println("Poltrona: N12");
-                System.out.println("Ótimo filme!!");
+                System.out.println("Ótimo filme!!");                
                 System.out.println("");
                 break;
             } else if (sala == 2){
@@ -52,7 +52,7 @@ public class App {
                     System.out.println("Filme:  - A Volta dos Que Não Foram - Classificação 12 anos");
                     System.out.println("Nome: " + nome + ", idade: " + idade);
                     System.out.println("Poltrona: M08");
-                    System.out.println("Ótimo filme!!");
+                    System.out.println("Ótimo filme!!");                    
                     System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
                     System.out.println("");
                     break;
@@ -61,7 +61,7 @@ public class App {
                     System.out.println("*************************************************************");
                     System.out.println("Cine SENAI");
                     System.out.println("Infelizmente você não tem a idade mínima determinada por lei.");
-                    System.out.println("Experimente outro filme!");
+                    System.out.println("Experimente outro filme!");                    
                     System.out.println("*************************************************************");
                     System.out.println("");
                     continue;
@@ -74,7 +74,7 @@ public class App {
                     System.out.println("Filme:  - Poeira em Alto Mar - Classificação 14 anos");
                     System.out.println("Nome: " + nome + ", idade: " + idade);
                     System.out.println("Poltrona: O02");
-                    System.out.println("Ótimo filme!!");
+                    System.out.println("Ótimo filme!!");                    
                     System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
                     System.out.println("");
                     break;
@@ -82,7 +82,7 @@ public class App {
                     System.out.println("*************************************************************");
                     System.out.println("Cine SENAI");
                     System.out.println("Infelizmente você não tem a idade mínima determinada por lei.");
-                    System.out.println("Experimente outro filme!");
+                    System.out.println("Experimente outro filme!");                    
                     System.out.println("*************************************************************");
                     System.out.println("");
                     continue;
@@ -95,7 +95,7 @@ public class App {
                     System.out.println("Filme:  - A Tranças do Rei Careca - Classificação 16 anos");
                     System.out.println("Nome: " + nome + ", idade: " + idade);
                     System.out.println("Poltrona: J16");
-                    System.out.println("Ótimo filme!!");
+                    System.out.println("Ótimo filme!!");                    
                     System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
                     System.out.println("");
                     break;
@@ -103,7 +103,7 @@ public class App {
                     System.out.println("*************************************************************");
                     System.out.println("Cine SENAI");
                     System.out.println("Infelizmente você não tem a idade mínima determinada por lei.");
-                    System.out.println("Experimente outro filme!");
+                    System.out.println("Experimente outro filme!");                    
                     System.out.println("*************************************************************");
                     System.out.println("");
                     continue;
@@ -116,7 +116,7 @@ public class App {
                     System.out.println("Filme:  - A Vingança do Peixe Frito - Classificação 18 anos");
                     System.out.println("Nome: " + nome + ", idade: " + idade);
                     System.out.println("Poltrona: M08");
-                    System.out.println("Ótimo filme!!");
+                    System.out.println("Ótimo filme!!");                    
                     System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
                     System.out.println("");
                     break;
@@ -124,7 +124,7 @@ public class App {
                     System.out.println("*************************************************************");
                     System.out.println("Cine SENAI");
                     System.out.println("Infelizmente você não tem a idade mínima determinada por lei.");
-                    System.out.println("Experimente outro filme!");
+                    System.out.println("Experimente outro filme!");                    
                     System.out.println("*************************************************************");
                     System.out.println("");
                     continue;
@@ -132,7 +132,7 @@ public class App {
             } else{
                 System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
                 System.out.println("Cine SENAI");
-                System.out.println("Escolha errada. Tente novamente!");
+                System.out.println("Escolha errada. Tente novamente!");                
                 System.out.println("");
             }
         } while(true);
