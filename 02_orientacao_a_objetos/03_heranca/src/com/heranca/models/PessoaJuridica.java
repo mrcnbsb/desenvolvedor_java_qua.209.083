@@ -5,4 +5,20 @@ public class PessoaJuridica extends Pessoa {
     public String razaoSocial;
     public String nomeFantasia;
     public String cnpj;
+
+    public PessoaJuridica(String razaoSocial, String nomeFantasia, String cnpj, String email, String telefone) {
+        super(email, telefone);
+        this.razaoSocial = razaoSocial;
+        this.nomeFantasia = nomeFantasia;
+        this.cnpj = cnpj;
+    }
+
+    // métodos
+    public void exibirDados(){        
+        System.out.println("Razão Social: " + this.razaoSocial);
+        System.out.println("Nome Fantasia: " + this.nomeFantasia);        
+        System.out.println("CNPJ: " + this.cnpj);        
+        super.exibirDados();
+    }
+
 }

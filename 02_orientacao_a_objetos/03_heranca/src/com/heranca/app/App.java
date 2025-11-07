@@ -1,40 +1,56 @@
 package com.heranca.app;
 
-//import com.heranca.models.Pessoa;
+// classe Java importada
+import java.util.Scanner;
+
+// classes criadas por mim
 import com.heranca.models.PessoaFisica;
 import com.heranca.models.PessoaJuridica;
 
-public class App {        
+public class App {            
     public static void main(String[] args) throws Exception {
-        // instancia
-        PessoaFisica usuario = new PessoaFisica();
-        PessoaJuridica empresa = new PessoaJuridica();
+        // instancias
+        Scanner scanner = new Scanner(System.in);
 
-        empresa.cnpj = "33.333.333/0001-33";
-        empresa.email = "empresa@gmail.com";
-        empresa.nomeFantasia = "Minha Emprasa";
-        empresa.razaoSocial = " Empresa S.A LTDA";
-        empresa.telefone = "(61)0800-1234";
+        PessoaFisica usuario = new PessoaFisica(null, null, 0, null, null);
+        PessoaJuridica pj = new PessoaJuridica(null, null, null, null, null);
+
+        // entrada de dados do usuário
+        System.out.println("\nINFORME OS DADOS DO USUÁRIO:\n");
+        System.out.println("Informe o nome:");
+        usuario.nome = scanner.nextLine();
+        System.out.println("Informe CPF:");
+        usuario.cpf = scanner.nextLine();
+        System.out.println("Informe o email:");
+        usuario.email = scanner.nextLine();
+        System.out.println("Informe o telefone:");
+        usuario.telefone = scanner.nextLine();
+        System.out.println("Informe a idade:");
+        usuario.idade = scanner.nextInt();
+
+        // limpeza do buffer: sempre após o scanner com dado numérico
+        scanner.nextLine();
+
+        // entrada de dados da empresa
+        System.out.println("\nINFORME OS DADOS DA EMPRESA:\n");
+        System.out.println("Informe o Nome Fantasia:");
+        pj.nomeFantasia = scanner.nextLine();
+        System.out.println("Informe a Razão Social:");
+        pj.razaoSocial = scanner.nextLine();
+        System.out.println("Informe o CNPJ");
+        pj.cnpj = scanner.nextLine();
+        System.out.println("Informe o email:");
+        pj.email = scanner.nextLine();
+        System.out.println("Informe o telefone:");
+        pj.telefone = scanner.nextLine();
         
-        System.out.println("Razão Social da empresa: " + empresa.razaoSocial);
-        System.out.println("Nome Fantasia da empresa: " + empresa.nomeFantasia);
-        System.out.println("CNPJ da empresa: " + empresa.cnpj);
-        System.out.println("Email a empresa: " + empresa.email);
-        System.out.println("Telefone a empresa: " + empresa.telefone);
+        // saída de dados
+        System.out.println("\nDADOS DO USUÁRIO:\n");
+        usuario.exibirDados();
+        System.out.println("\nDADOS DA EMPRESA:\n");
+        pj.exibirDados();
 
-        System.out.println("\n-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-\n");
-
-        usuario.nome = "Marcone";
-        usuario.cpf = "123.456.789-01";
-        usuario.idade = 45;
-        usuario.email = "marcone@gmail.com";
-        usuario.telefone = "(61)98765-4321";
-
-
-        System.out.println("Nome do usuario: " + usuario.nome);
-        System.out.println("CPF do usuario: " + usuario.cpf);        
-        System.out.println("Email do usuario: " + usuario.email);
-        System.out.println("Telefone do usuario: " + usuario.telefone);
-        System.out.println("Idade do usuario: " + usuario.idade + "anos.");
+        // fecla objeto leia
+        scanner.close();
     }
 }
