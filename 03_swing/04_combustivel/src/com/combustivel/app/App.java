@@ -10,7 +10,7 @@ public class App {
         Combustivel combustivel = new Combustivel();
 
         // array
-        String[] opcoes = {"Informar valores", "Sair do programa", "Outra opção", "Mais uma opção"};
+        String[] opcoes = {"Informar valores", "Sair do programa"};
         Object opcao;
 
         do {
@@ -19,7 +19,7 @@ public class App {
                 null,
                 "Selecione uma opção:", // texto na caixa
                 "Combustível", // títula da janela
-                0,
+                JOptionPane.INFORMATION_MESSAGE,
                 null,
                 opcoes, // array com opções
                 opcoes[0] // default na caixa de seleção
