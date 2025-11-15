@@ -10,7 +10,7 @@ public class Conta implements IConta {
     private String nConta;
     private double saldo;
 
-    // constructor
+    // constructors
     public Conta() {
     }
 
@@ -21,7 +21,6 @@ public class Conta implements IConta {
         this.nConta = nConta;
         this.saldo = saldo;
     }
-
 
     // métodos
     public String getTitular() {
