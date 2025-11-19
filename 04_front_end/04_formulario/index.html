@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário HTML</h1>
+    <hr>
+
+    <!-- formulário -->
+     <form>
+        <!-- required para campos obrigatórios -->
+        <label for="text">Nome:</label><br />
+        <input type="text" maxlength="20" id="text" name="text" placeholder="Digite até 20 caracteres" required><br />
+
+        <label for="pass">Senha:</label><br />
+        <input type="password" id="pass" name="pass"> <br />
+        
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email"> <br />
+        
+        <label for="number">Idade:</label><br />
+        <input type="number" id="number" name="number" value="18" min="12" max="65" step="5"> <br />
+               
+        <label for="date">Data de Nascimento:</label><br />
+        <input type="date" id="date" name="date"> <br />
+        
+        <label for="time">Hora de Nascimento:</label><br />
+        <input type="time" id="time" name="time"> <br />
+        
+        <label for="checkbox">Curso Java Senai:</label><br />
+        <input type="checkbox" value="java" id="java" name="checkbox">
+        <input type="checkbox" value="python" id="python" name="checkbox"> <br />
+        
+        <label for="radio">Cursos Senai:</label><br />
+        <input type="radio" id="radio" name="radio"> <br />
+        
+        <label for="file">Arquivo:</label><br />
+        <input type="file" id="file" name="file"> <br />
+        
+        <label for="textarea">Observação:</label><br />
+        <textarea name="textarea" rows="4" cols="30"></textarea><br />
+
+        <label for="hidden">Escondido:</label><br />
+        <input type="hidden" id="hidden" name="hidden"> <br />
+        
+        <label for="submit">Enviar:</label><br />
+        <input type="submit" id="submit" name="submit"> <br />
+        
+        <label for="reset">Reset:</label><br />
+        <input type="reset" id="reset" name="reset"> <br />
+        
+        <label for="button">Botão:</label><br />
+        <input type="button" id="button" name="button"> <br />
+
+        <label for="estado">UF</label><br />
+        <select name="estado">
+            <option value="">Selecione</option>
+            <option value="df">Distrito Federal</option>
+            <option value="mg">Minas Gerais</option>
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+        </select><br />
+
+        <select name="carro">
+            <optgroup label="SUV">
+                <option>Compass</option>
+                <option>Tracker</option>
+            </optgroup>
+            <optgroup label="Sedan">
+                <option>Civic</option>
+                <option>Corolla</option>
+            </optgroup>
+        </select><br />
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label>Nome:</label>
+            <input type="text">
+
+            <label>Email:</label>
+            <input type="email">
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+        <button type="button" onclick="alert('Olá!')">Clique</button><br />
+
+        <input list="cidades" name="cidade">
+
+        <datalist id="cidades">
+            <option value="Brasilia">
+            <option value="Ouro Preto">
+            <option value="Tiradentes">
+        </datalist>
+
+        <p>Escolha uma cor:</p>
+
+        <input type="radio" name="cor" id="vermelho" value="vermelho">
+        <label for="vermelho">Vermelho</label>
+
+        <input type="radio" name="cor" id="azul" value="azul">
+        <label for="azul">Azul</label>
+
+        <input type="radio" name="cor" id="verde" value="verde">
+        <label for="verde">Verde</label>
+
+        <p>Selecione os itens desejados:</p>
+
+        <input type="checkbox" id="agua" name="itens[]" value="agua">
+        <label for="agua">Água</label>
+
+        <input type="checkbox" id="suco" name="itens[]" value="suco">
+        <label for="suco">Suco</label>
+
+        <input type="checkbox" id="refrigerante" name="itens[]" value="refrigerante">
+        <label for="refrigerante">Refrigerante</label>
+        
+     </form>
+    
+    
+</body>
+</html>
