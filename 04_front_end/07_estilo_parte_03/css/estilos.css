@@ -1,0 +1,101 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+h1{
+    color:#007700;
+    text-shadow: 1px 1px 10px;
+}
+main{
+    margin: 30px 100px
+}
+form{
+    margin: 50px 15px  
+}
+label, button{
+    display: block;    
+}
+label{
+    margin-bottom: 5px 0px;
+}
+input, select{
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #007700;
+    color: #007700
+}
+input:focus{
+    border-bottom: 2px solid #00FF00;
+    transition: 0.5s ease;
+}
+select:focus{
+    border-bottom: 2px solid #00FF00 ;
+}
+select{
+    font-size: 15px;
+    color: #007700;
+}
+button{
+    margin-top: 50px;
+    color: #FFFFFF;
+    background: #007700;
+    font-size: 18px;
+    padding: 5px 10px;
+    width: 100px;
+    border-radius: 5px;
+    text-shadow: 1px 1px 10px;
+}
+button:hover{
+    background-color: #FFFFFF;
+    color:#007700;
+    transition: 0.5s ease;
+}
+.nome, .email{
+    width: 500px;
+    font-size: 18px;    
+}
+.data_nascimento{
+    width: 150px;
+    font-size: 18px;
+}
+.altura, .peso{
+    width: 50px;
+    font-size: 18px;
+}
+.genero{
+    font-size: 18px;
+    color:#007700;
+}
+.cpf, .celular, .contato{
+    width: 150px;
+    font-size: 18px;
+}
+label.estado_civil{
+    font-size: 18px;
+    color:#007700;
+    display: inline;
+}
+label.linguagens{
+    font-size: 18px;
+    color:#007700;
+    display: inline-block;
+}
+
+.complemento{
+    width: 500px;
+    font-size: 18px;
+    display: block;
+}
+.numero{
+     width: 50px;
+    font-size: 18px;
+    display: inline;
+}
+.bairro{
+    width: 300px;
+    font-size: 18px;
+    display: block;
+}
+
+

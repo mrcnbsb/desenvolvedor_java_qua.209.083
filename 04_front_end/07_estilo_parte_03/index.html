@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com CSS</title>
+    <!-- css externo -->
+    <link href="css/estilos.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <main>
+        <h1>Formulário</h1>
+        <hr />
+        <form>
+            <label>Nome:</label>
+            <input type="text" class="nome">
+            <label>CPF:</label>
+            <input type="text" class="cpf">
+            <label>Celular:</label>
+            <input type="tel" class="celular">
+            <label>Contato:</label> 
+            <input type="tel" class="contato">
+            <label>E-mail:</label>
+            <input type="email" class="email">
+            <label>Data de Nascimento:</label>
+            <input type="date" class="data_nascimento">
+            <label>Peso:</label>
+            <input type="number" step="0.01" class="peso">
+            <label>Altura:</label>
+            <input type="number" step="0.01" class="altura">
+            <label>Gênero</label>
+            <select class="genero">
+                <option>Escolha um gênero...</option>
+                <option>Masculino</option>
+                <option>Feminino</option>
+                <option>Outro</option>
+                <option>Prefiro não informar</option>
+            </select>
+            <p>Estado Civil:</p>
+            <label class="estado_civil">
+                <input type="radio" value="solteiro" class="estado_civil" name="estado_civil">Solteiro
+            </label>
+            <label class="estado_civil">
+                <input type="radio" value="casado" class="estado_civil" name="estado_civil">Casado
+            </label>
+            <p>Selecione as linguagens desejadas:</p>
+
+            <input type="checkbox" id="java" name="linguagens" value="java" class="linguagens">
+            <label for="java" class="linguagens">Java</label>
+
+            <input type="checkbox" id="python" name="linguagens" value="python" class="linguagens">
+            <label for="python" class="linguagens">Python</label>
+
+            <input type="checkbox" id="php" name="linguagens" value="php" class="linguagens">
+            <label for="php" class="linguagens">PHP</label>
+
+             <input type="checkbox" id="c" name="linguagens" value="c" class="linguagens">
+            <label for="php" class="linguagens">C/C++</label>
+
+            <fieldset>
+                <legend>Endereço:</legend>
+
+                <label>Logradouro:</label>
+                <select class="logradouro">
+                    <option>Selecione</option>
+                    <option>Acesso</option>
+                    <option>Alameda</option>
+                    <option>Avenida</option>
+                    <option>Boulevard</option>
+                    <option>Campo</option>
+                    <option>Chácara</option>
+                    <option>Condomínio</option>
+                    <option>Conjunto</option>
+                    <option>Esplanada</option>
+                    <option>Escadaria</option>
+                    <option>Estrada</option>
+                    <option>Galeria</option>
+                    <option>Largo</option>
+                    <option>Núcleo</option>
+                    <option>Parque</option>
+                    <option>Passagem</option>
+                    <option>Passeio</option>
+                    <option>Praça</option>
+                    <option>Quadra</option>
+                    <option>Recanto</option>
+                    <option>Residencial</option>
+                    <option>Rodovia</option>
+                    <option>Rua</option>
+                    <option>Servidão</option>
+                    <option>Setor</option>
+                    <option>Sítio</option>
+                    <option>Travessa</option>
+                    <option>Viela</option>
+                    <option>Via</option>
+                    <option>Viaduto</option>
+                    <option>Rotatória</option>
+                    <option>Caminho</option>
+                    <option>Estradinha</option>
+                </select>
+                <label>Complemento:</label>
+                <input type="text" class="complemento"
+
+                <label>Número:</label>
+                <input type="number" class="numero">
+
+                <label>Bairro:</label>
+                <input type="number" class="bairro">
+                
+                <label>UF</label>
+                <select>
+                    <option>Selecione</option>
+                    <option>Acre</option>
+                    <option>Alagoas</option>
+                    <option>Amapa</option>
+                    <option>Amazonas</option>
+                    <option>Bahia</option>
+                    <option>Ceara</option>
+                    <option>Distrito Federal</option>
+                    <option>Espirito Santo</option>
+                    <option>Goias</option>
+                    <option>Maranhao</option>
+                    <option>Mato Grosso</option>
+                    <option>Mato Grosso do Sul</option>
+                    <option>Minas Gerais</option>
+                    <option>Para</option>
+                    <option>Paraiba</option>
+                    <option>Parana</option>
+                    <option>Pernambuco</option>
+                    <option>Piaui</option>
+                    <option>Rio de Janeiro</option>
+                    <option>Rio Grande do Norte</option>
+                    <option>Rio Grande do Sul</option>
+                    <option>Rondonia</option>
+                    <option>Roraima</option>
+                    <option>Santa Catarina</option>
+                    <option>Sao Paulo</option>
+                    <option>Sergipe</option>
+                    <option>Tocantins</option>
+                </select>
+
+            </fieldset>
+
+
+            
+            <button type="submit" class="enviar">Enviar</button>
+
+        </form>
+        <hr />
+    </main>    
+</body>
+</html>
