@@ -16,7 +16,7 @@
     <link href="img/book-stack.png" rel="shortcut icon" type="image/png">
 </head>
 
-<body>
+<body class="bg-success">
     <!-- navbar -->
     <!-- bg-success -->
     <nav class="navbar navbar-expand-lg sombra_navbar mb-5" data-bs-theme="dark">
@@ -44,9 +44,11 @@
     <!-- fim do navbar -->
 
     <!-- container -->
-    <main class="container">
-        <h1>CADASTRO</h1>
+    <main class="container bg-primary">
+        <h1 class="mt-5">Cadastro</h1>
+        <h3>Dados do Usuário</h3>
         <hr>
+        <!-- formulário -->
         <form class="mt-5">
             <div class="row">
                 <!-- nome -->
@@ -81,7 +83,143 @@
                         <option value="4">Não desejo informar</option>
                     </select>
                 </div>
+                <!-- email -->
+                <div class="col-12 col-md-8 col-lg-9 mb-3">
+                    <label class="form-label">Email:</label>
+                    <input class="form-control" type="email" placeholder="usuario@servidor.com"
+                        aria-label="default input example">
+                </div>
+                <!-- telefone -->
+                <div class="col-12 col-md-4 col-lg-3 mb-3">
+                    <label class="form-label">Telefone:</label>
+                    <input class="form-control" type="tel" placeholder="(99) 99999-9999"
+                        aria-label="default input example">
+                </div>
+                <!-- escolaridade -->
+                <div class="col-12 col-md-4 mb-3">
+                    <label class="form-label">Escolaridade:</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Escolha uma opção</option>
+                        <option value="fundamental_incompleto">Fundamental incompleto</option>
+                        <option value="fundamental_completo">Fundamental completo</option>
+                        <option value="medio_incompleto">Médio incompleto</option>
+                        <option value="medio_completo">Médio completo</option>
+                        <option value="superior_incompleto">Superior incompleto</option>
+                        <option value="superior_completo">Superior completo</option>
+                        <option value="pos_graduacao">Pós-graduação</option>
+                        <option value="mestrado">Mestrado</option>
+                        <option value="doutorado">Doutorado</option>
+                    </select>
+                </div>
+                <!-- profissão -->
+                <div class="col-12 col-md-4 mb-3">
+                    <label class="form-label">Profissão:</label>
+                    <input class="form-control" type="text" placeholder="Profissão" aria-label="default input example">
+                </div>
+                <!-- salário -->
+                <div class="col-12 col-md-4 mb-3">
+                    <label class="form-label">Salário:</label>
+                    <input class="form-control" type="number" step="100" placeholder="R$ 0,00"
+                        aria-label="default input example">
+                </div>
             </div>
+            <!-- fim da row -->
+            <h3 class="mt-5">Endereço</h3>
+            <hr>
+            <!-- row -->
+            <div class="row">
+                <!-- CEP -->
+                <div class="col-12 col-md-4 col-lg-2 mb-3">
+                    <label class="form-label">CEP:</label>
+                    <input class="form-control" type="text" placeholder="99.999-999" aria-label="default input example">
+                </div>
+                <!-- UF -->
+                <div class="col-12 col-md-2 col-lg-1 mb-3">
+                    <label class="form-label">UF:</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>UF</option>
+                        <option>AC</option>
+                        <option>AL</option>
+                        <option>AP</option>
+                        <option>AM</option>
+                        <option>BA</option>
+                        <option>CE</option>
+                        <option>DF</option>
+                        <option>ES</option>
+                        <option>GO</option>
+                        <option>MA</option>
+                        <option>MT</option>
+                        <option>MS</option>
+                        <option>MG</option>
+                        <option>PA</option>
+                        <option>PB</option>
+                        <option>PR</option>
+                        <option>PE</option>
+                        <option>PI</option>
+                        <option>RJ</option>
+                        <option>RN</option>
+                        <option>RS</option>
+                        <option>RO</option>
+                        <option>RR</option>
+                        <option>SC</option>
+                        <option>SP</option>
+                        <option>SE</option>
+                        <option>TO</option>
+                    </select>
+                </div>
+                <!-- cidade -->
+                <div class="col-12 col-md-6 col-lg-5 mb-3">
+                    <label class="form-label">Cidade:</label>
+                    <input class="form-control" type="text" placeholder="Cidade" aria-label="default input example">
+                </div>
+                <!-- bairro -->
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <label class="form-label">Bairro:</label>
+                    <input class="form-control" type="text" placeholder="Bairro" aria-label="default input example">
+                </div>
+                <!-- logradouro -->
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <label class="form-label">Logradouro:</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Escolha uma opção</option>
+                        <option>Acesso</option>
+                        <option>Alameda</option>
+                        <option>Avenida</option>
+                        <option>Boulevard</option>
+                        <option>Campo</option>
+                        <option>Chácara</option>
+                        <option>Condomínio</option>
+                        <option>Conjunto</option>
+                        <option>Esplanada</option>
+                        <option>Escadaria</option>
+                        <option>Estrada</option>
+                        <option>Galeria</option>
+                        <option>Largo</option>
+                        <option>Núcleo</option>
+                        <option>Parque</option>
+                        <option>Passagem</option>
+                        <option>Passeio</option>
+                        <option>Praça</option>
+                        <option>Quadra</option>
+                        <option>Recanto</option>
+                        <option>Residencial</option>
+                        <option>Rodovia</option>
+                        <option>Rua</option>
+                        <option>Servidão</option>
+                        <option>Setor</option>
+                        <option>Sítio</option>
+                        <option>Travessa</option>
+                        <option>Viela</option>
+                        <option>Via</option>
+                        <option>Viaduto</option>
+                        <option>Rotatória</option>
+                        <option>Caminho</option>
+                        <option>Estradinha</option>
+                    </select>
+                </div>
+            </div>
+            <!-- fim da row -->
+
         </form>
     </main>
 
