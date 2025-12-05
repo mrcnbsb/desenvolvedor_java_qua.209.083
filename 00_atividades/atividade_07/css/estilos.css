@@ -1,0 +1,46 @@
+ body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.img-pequena {
+    width: 60px;
+    height: auto;
+}
+
+.img-muito-pequena {
+    width: 25px;
+    height: auto;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #343a40;
+    color: white;
+    height: calc(100vh - 56px);
+    position: fixed;
+    top: 56px;
+    left: 0;
+    padding: 1rem;
+    border-right: 1px solid #495057; /* linha sutil de divisão */
+}
+
+main {
+    margin-left: 250px;
+    margin-top: 56px;
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+    background: #f8f9fa;
+    padding: 20px 30px; /* 💡 espaçamento interno no main */
+}
+
+.sidebar a {
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background: #495057;
+    border-radius: 4px;
+}
