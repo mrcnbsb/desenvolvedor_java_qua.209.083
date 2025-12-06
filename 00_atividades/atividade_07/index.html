@@ -20,15 +20,7 @@
     <!-- navbar -->
     <!-- bg-success -->
     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-        <div class="container-fluid">
-            <!-- <a class="navbar-brand" href="#">
-                <img src="img/book-stack.png" alt="Ícone Tarefa" class="minha_logo">
-            </a> -->
-            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
+        <div class="container-fluid">           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item ">
@@ -61,7 +53,8 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="form.html">
-                                <img class="img-fluid rounded-circle img-pequena" src="img/icon_usuario2.jpg" alt="vídeo">
+                                <img class="img-fluid rounded-circle img-pequenina" src="img/icon_usuario2.jpg"
+                                    alt="vídeo">
                             </a>
                         </li>
                     </ul>
@@ -75,238 +68,657 @@
     <main class="d-flex">
         <!-- menu lateral -->
         <aside class="sidebar">
-            <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark bg-dark" style="width: 280px;">
-                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                    <svg class="bi pe-none me-2" width="40" height="32" aria-hidden="true">
-                        <use xlink:href="#bootstrap"></use>
-                    </svg>
-                    <span class="fs-4">Trending Casters</span>
-                </a>
-                <hr>
-                <ul class="nav nav-pills flex-column mb-auto">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active" aria-current="page">
-                            <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
-                                <use xlink:href="#home"></use>
-                            </svg>
-                            Home
-                        </a>
+            <div class="flex-shrink-0 p-3" style="width: 280px">
+                <ul class="list-unstyled ps-0">
+                    <li class="mb-1">
+                        <button
+                            class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed bg-success"
+                            data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                            Trending Caster
+                        </button>
+                        <div class="collapse show" id="home-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li>
+                                    <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">
+                                        <img src="img/icon_usuario2.jpg" class="img-pequeninazinha">
+                                        <span>User</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">
+                                        <img src="img/icon_usuario2.jpg" class="img-pequeninazinha">
+                                        <span>User</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">
+                                        <img src="img/icon_usuario2.jpg" class="img-pequeninazinha">
+                                        <span>User</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">
+                                        <img src="img/icon_usuario2.jpg" class="img-pequeninazinha">
+                                        <span>User</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
-                    <li>
-                        <a href="#" class="nav-link text-white"> <svg class="bi pe-none me-2" width="16" height="16"
-                                aria-hidden="true">
-
-                                <use xlink:href="#speedometer2"></use>
-                            </svg>
-                            Dashboard
-                        </a>
+                    <li class="mb-1">
+                        <button
+                            class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed bg-success"
+                            data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="true">
+                            Hashtags
+                        </button>
+                        <div class="collapse show" id="dashboard-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li>
+                                    <a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">#musicians</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">#dance</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">#girls</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">#bored</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">#guys</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">#asq_questions</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">#random</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">#singing</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">#girl</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
-                    <li>
-                        <a href="#" class="nav-link text-white"> <svg class="bi pe-none me-2" width="16" height="16"
-                                aria-hidden="true">
-                                <use xlink:href="#table"></use>
-                            </svg>
-                            Orders
-                        </a>
+                    <li class="mb-1">
+                        <button
+                            class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed bg-success"
+                            data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="true">
+                            Locations
+                        </button>
+                        <div class="collapse show" id="orders-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li>
+                                    <a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">#downtown</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">#beach</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">#california</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">#newyork</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">#london</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
-                    <li>
-                        <a href="#" class="nav-link text-white"> <svg class="bi pe-none me-2" width="16" height="16"
-                                aria-hidden="true">
-                                <use xlink:href="#grid"></use>
-                            </svg>
-                            Products
-                        </a> </li>
-                    <li> <a href="#" class="nav-link text-white"> <svg class="bi pe-none me-2" width="16" height="16"
-                                aria-hidden="true">
-                                <use xlink:href="#people-circle"></use>
-                            </svg>
-                            Customers
-                        </a> </li>
+                    <li class="border-top my-3"></li>
+                    <li class="mb-1">
+                        <button
+                            class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed bg-success"
+                            data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="true">
+                            Just For You
+                        </button>
+                        <div class="collapse show" id="account-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li>
+                                    <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">
+                                        <img src="img/icon_usuario2.jpg" class="img-pequeninazinha">
+                                        <span>User</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">
+                                        <img src="img/icon_usuario2.jpg" class="img-pequeninazinha">
+                                        <span>User</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">
+                                        <img src="img/icon_usuario2.jpg" class="img-pequeninazinha">
+                                        <span>User</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">
+                                        <img src="img/icon_usuario2.jpg" class="img-pequeninazinha">
+                                        <span>User</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
-                
             </div>
-            <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
-                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                    <svg class="bi pe-none me-2" width="40" height="32" aria-hidden="true">
-                        <use xlink:href="#bootstrap"></use>
-                    </svg>
-                    <span class="fs-4">Hashtags</span>
-                </a>
-                <hr>
-                <ul class="nav nav-pills flex-column mb-auto">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active" aria-current="page">
-                            <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
-                                <use xlink:href="#home"></use>
-                            </svg>
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link text-white"> <svg class="bi pe-none me-2" width="16" height="16"
-                                aria-hidden="true">
-
-                                <use xlink:href="#speedometer2"></use>
-                            </svg>
-                            Dashboard
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link text-white"> <svg class="bi pe-none me-2" width="16" height="16"
-                                aria-hidden="true">
-                                <use xlink:href="#table"></use>
-                            </svg>
-                            Orders
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link text-white"> <svg class="bi pe-none me-2" width="16" height="16"
-                                aria-hidden="true">
-                                <use xlink:href="#grid"></use>
-                            </svg>
-                            Products
-                        </a> </li>
-                    <li> <a href="#" class="nav-link text-white"> <svg class="bi pe-none me-2" width="16" height="16"
-                                aria-hidden="true">
-                                <use xlink:href="#people-circle"></use>
-                            </svg>
-                            Customers
-                        </a> </li>
-                </ul>                
-            </div>
-            <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
-                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                    <svg class="bi pe-none me-2" width="40" height="32" aria-hidden="true">
-                        <use xlink:href="#bootstrap"></use>
-                    </svg>
-                    <span class="fs-4">Locations</span>
-                </a>
-                <hr>
-                <ul class="nav nav-pills flex-column mb-auto">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active" aria-current="page">
-                            <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
-                                <use xlink:href="#home"></use>
-                            </svg>
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link text-white"> <svg class="bi pe-none me-2" width="16" height="16"
-                                aria-hidden="true">
-
-                                <use xlink:href="#speedometer2"></use>
-                            </svg>
-                            Dashboard
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link text-white"> <svg class="bi pe-none me-2" width="16" height="16"
-                                aria-hidden="true">
-                                <use xlink:href="#table"></use>
-                            </svg>
-                            Orders
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link text-white"> <svg class="bi pe-none me-2" width="16" height="16"
-                                aria-hidden="true">
-                                <use xlink:href="#grid"></use>
-                            </svg>
-                            Products
-                        </a> </li>
-                    <li> <a href="#" class="nav-link text-white"> <svg class="bi pe-none me-2" width="16" height="16"
-                                aria-hidden="true">
-                                <use xlink:href="#people-circle"></use>
-                            </svg>
-                            Customers
-                        </a> </li>
-                </ul>                
-            </div>
-
         </aside>
         <!-- fim do menu lateral -->
 
         <!-- imagens com vídeos -->
         <div>
             <section class="row">
+                <!-- 4x figure por linha -->
+                <figure class="col-12 col-md-6 col-lg-3 mt-3">
+                    <!-- imagem maior -->
+                    <div class="col-12">
+                        <img src="img/u0.jpg" alt="vídeo" class="img-fluid">
+                    </div>
+                    <!-- abaixo da imagem maior -->
+                    <div class="row align-items-center">
+                        <!-- ícone -->
+                        <div class="col-2 d-flex justify-content-start">
+                            <img class="img-fluid rounded-circle img-pequeninazinha" src="img/icon_usuario2.jpg"
+                                alt="vídeo">
+                        </div>
+                        <!-- textos -->
+                        <div class="col-8">
+                            <span class="d-block">#marcone</span>
+                            <span class="d-block">#fun</span>
+                        </div>
 
-                <!-- 4x figure por linha -->
-                <figure class="col-12 col-md-6 col-lg-3 mt-3">
-                    <img src="img/u0.jpg" alt="vídeo" class="img-fluid">
-                    <img class="img-fluid rounded-circle img-muito-pequena" src="img/icon_usuario2.jpg" alt="vídeo">
+                        <div class="col-2 d-flex align-items-center">
+                            <img src="img/eye.png" class="me-1" style="width: 20px;">
+                            <span>376</span>
+                        </div>
+                    </div>
                 </figure>
                 <figure class="col-12 col-md-6 col-lg-3 mt-3">
-                    <img src="img/u1.jpg" alt="vídeo">
-                    <img class="img-fluid rounded-circle img-muito-pequena" src="img/icon_usuario2.jpg" alt="vídeo">
+                    <!-- imagem maior -->
+                    <div class="col-12">
+                        <img src="img/u1.jpg" alt="vídeo" class="img-fluid">
+                    </div>
+                    <!-- abaixo da imagem maior -->
+                    <div class="row mt-1 align-items-center">
+                        <!-- ícone -->
+                        <div class="col-2 d-flex justify-content-start">
+                            <img class="img-fluid rounded-circle img-pequeninazinha" src="img/icon_usuario2.jpg"
+                                alt="vídeo">
+                        </div>
+                        <!-- textos -->
+                        <div class="col-8">
+                            <span class="d-block">#marcone</span>
+                            <span class="d-block">#fun</span>
+                        </div>
+
+                        <div class="col-2 d-flex align-items-center">
+                            <img src="img/eye.png" class="me-1" style="width: 25px;">
+                            <span>376</span>
+                        </div>
+                    </div>
                 </figure>
                 <figure class="col-12 col-md-6 col-lg-3 mt-3">
-                    <img src="img/u2.jpg" alt="vídeo">
-                    <img class="img-fluid rounded-circle img-muito-pequena" src="img/icon_usuario2.jpg" alt="vídeo">
+                    <!-- imagem maior -->
+                    <div class="col-12">
+                        <img src="img/u2.jpg" alt="vídeo" class="img-fluid">
+                    </div>
+                    <!-- abaixo da imagem maior -->
+                    <div class="row mt-1 align-items-center">
+                        <!-- ícone -->
+                        <div class="col-2 d-flex justify-content-start">
+                            <img class="img-fluid rounded-circle img-pequeninazinha" src="img/icon_usuario2.jpg"
+                                alt="vídeo">
+                        </div>
+                        <!-- textos -->
+                        <div class="col-8">
+                            <span class="d-block">#marcone</span>
+                            <span class="d-block">#fun</span>
+                        </div>
+
+                        <div class="col-2 d-flex align-items-center">
+                            <img src="img/eye.png" class="me-1" style="width: 25px;">
+                            <span>376</span>
+                        </div>
+                    </div>
                 </figure>
                 <figure class="col-12 col-md-6 col-lg-3 mt-3">
-                    <img src="img/u3.jpg" alt="vídeo">
-                    <img class="img-fluid rounded-circle img-muito-pequena" src="img/icon_usuario2.jpg" alt="vídeo">
+                    <!-- imagem maior -->
+                    <div class="col-12">
+                        <img src="img/u3.jpg" alt="vídeo" class="img-fluid">
+                    </div>
+                    <!-- abaixo da imagem maior -->
+                    <div class="row mt-1 align-items-center">
+                        <!-- ícone -->
+                        <div class="col-2 d-flex justify-content-start">
+                            <img class="img-fluid rounded-circle img-pequeninazinha" src="img/icon_usuario2.jpg"
+                                alt="vídeo">
+                        </div>
+                        <!-- textos -->
+                        <div class="col-8">
+                            <span class="d-block">#marcone</span>
+                            <span class="d-block">#fun</span>
+                        </div>
+
+                        <div class="col-2 d-flex align-items-center">
+                            <img src="img/eye.png" class="me-1" style="width: 25px;">
+                            <span>376</span>
+                        </div>
+                    </div>
                 </figure>
             </section>
             <section class="row">
                 <!-- 4x figure por linha -->
                 <figure class="col-12 col-md-6 col-lg-3 mt-3">
-                    <img src="img/u4.jpg" alt="vídeo">
+                    <!-- imagem maior -->
+                    <div class="col-12">
+                        <img src="img/u4.jpg" alt="vídeo" class="img-fluid">
+                    </div>
+                    <!-- abaixo da imagem maior -->
+                    <div class="row mt-1 align-items-center">
+                        <!-- ícone -->
+                        <div class="col-2 d-flex justify-content-start">
+                            <img class="img-fluid rounded-circle img-pequeninazinha" src="img/icon_usuario2.jpg"
+                                alt="vídeo">
+                        </div>
+                        <!-- textos -->
+                        <div class="col-8">
+                            <span class="d-block">#marcone</span>
+                            <span class="d-block">#fun</span>
+                        </div>
+
+                        <div class="col-2 d-flex align-items-center">
+                            <img src="img/eye.png" class="me-1" style="width: 25px;">
+                            <span>376</span>
+                        </div>
+                    </div>
                 </figure>
                 <figure class="col-12 col-md-6 col-lg-3 mt-3">
-                    <img src="img/u5.jpg" alt="vídeo">
+                    <!-- imagem maior -->
+                    <div class="col-12">
+                        <img src="img/u5.jpg" alt="vídeo" class="img-fluid">
+                    </div>
+                    <!-- abaixo da imagem maior -->
+                    <div class="row mt-1 align-items-center">
+                        <!-- ícone -->
+                        <div class="col-2 d-flex justify-content-start">
+                            <img class="img-fluid rounded-circle img-pequeninazinha" src="img/icon_usuario2.jpg"
+                                alt="vídeo">
+                        </div>
+                        <!-- textos -->
+                        <div class="col-8">
+                            <span class="d-block">#marcone</span>
+                            <span class="d-block">#fun</span>
+                        </div>
+
+                        <div class="col-2 d-flex align-items-center">
+                            <img src="img/eye.png" class="me-1" style="width: 25px;">
+                            <span>376</span>
+                        </div>
+                    </div>
                 </figure>
                 <figure class="col-12 col-md-6 col-lg-3 mt-3">
-                    <img src="img/u6.jpg" alt="vídeo">
+                    <!-- imagem maior -->
+                    <div class="col-12">
+                        <img src="img/u6.jpg" alt="vídeo" class="img-fluid">
+                    </div>
+                    <!-- abaixo da imagem maior -->
+                    <div class="row mt-1 align-items-center">
+                        <!-- ícone -->
+                        <div class="col-2 d-flex justify-content-start">
+                            <img class="img-fluid rounded-circle img-pequeninazinha" src="img/icon_usuario2.jpg"
+                                alt="vídeo">
+                        </div>
+                        <!-- textos -->
+                        <div class="col-8">
+                            <span class="d-block">#marcone</span>
+                            <span class="d-block">#fun</span>
+                        </div>
+
+                        <div class="col-2 d-flex align-items-center">
+                            <img src="img/eye.png" class="me-1" style="width: 25px;">
+                            <span>376</span>
+                        </div>
+                    </div>
                 </figure>
                 <figure class="col-12 col-md-6 col-lg-3 mt-3">
-                    <img src="img/u7.jpg" alt="vídeo">
+                    <!-- imagem maior -->
+                    <div class="col-12">
+                        <img src="img/u7.jpg" alt="vídeo" class="img-fluid">
+                    </div>
+                    <!-- abaixo da imagem maior -->
+                    <div class="row mt-1 align-items-center">
+                        <!-- ícone -->
+                        <div class="col-2 d-flex justify-content-start">
+                            <img class="img-fluid rounded-circle img-pequeninazinha" src="img/icon_usuario2.jpg"
+                                alt="vídeo">
+                        </div>
+                        <!-- textos -->
+                        <div class="col-8">
+                            <span class="d-block">#marcone</span>
+                            <span class="d-block">#fun</span>
+                        </div>
+
+                        <div class="col-2 d-flex align-items-center">
+                            <img src="img/eye.png" class="me-1" style="width: 25px;">
+                            <span>376</span>
+                        </div>
+                    </div>
                 </figure>
             </section>
             <section class="row">
                 <!-- 4x figure por linha -->
                 <figure class="col-12 col-md-6 col-lg-3 mt-3">
-                    <img src="img/u8.jpg" alt="vídeo">
+                    <!-- imagem maior -->
+                    <div class="col-12">
+                        <img src="img/u8.jpg" alt="vídeo" class="img-fluid">
+                    </div>
+                    <!-- abaixo da imagem maior -->
+                    <div class="row mt-1 align-items-center">
+                        <!-- ícone -->
+                        <div class="col-2 d-flex justify-content-start">
+                            <img class="img-fluid rounded-circle img-pequeninazinha" src="img/icon_usuario2.jpg"
+                                alt="vídeo">
+                        </div>
+                        <!-- textos -->
+                        <div class="col-8">
+                            <span class="d-block">#marcone</span>
+                            <span class="d-block">#fun</span>
+                        </div>
+
+                        <div class="col-2 d-flex align-items-center">
+                            <img src="img/eye.png" class="me-1" style="width: 25px;">
+                            <span>376</span>
+                        </div>
+                    </div>
                 </figure>
                 <figure class="col-12 col-md-6 col-lg-3 mt-3">
-                    <img src="img/u9.jpg" alt="vídeo">
+                    <!-- imagem maior -->
+                    <div class="col-12">
+                        <img src="img/u9.jpg" alt="vídeo" class="img-fluid">
+                    </div>
+                    <!-- abaixo da imagem maior -->
+                    <div class="row mt-1 align-items-center">
+                        <!-- ícone -->
+                        <div class="col-2 d-flex justify-content-start">
+                            <img class="img-fluid rounded-circle img-pequeninazinha" src="img/icon_usuario2.jpg"
+                                alt="vídeo">
+                        </div>
+                        <!-- textos -->
+                        <div class="col-8">
+                            <span class="d-block">#marcone</span>
+                            <span class="d-block">#fun</span>
+                        </div>
+
+                        <div class="col-2 d-flex align-items-center">
+                            <img src="img/eye.png" class="me-1" style="width: 25px;">
+                            <span>376</span>
+                        </div>
+                    </div>
                 </figure>
                 <figure class="col-12 col-md-6 col-lg-3 mt-3">
-                    <img src="img/u10.jpg" alt="vídeo">
+                    <!-- imagem maior -->
+                    <div class="col-12">
+                        <img src="img/u10.jpg" alt="vídeo" class="img-fluid">
+                    </div>
+                    <!-- abaixo da imagem maior -->
+                    <div class="row mt-1 align-items-center">
+                        <!-- ícone -->
+                        <div class="col-2 d-flex justify-content-start">
+                            <img class="img-fluid rounded-circle img-pequeninazinha" src="img/icon_usuario2.jpg"
+                                alt="vídeo">
+                        </div>
+                        <!-- textos -->
+                        <div class="col-8">
+                            <span class="d-block">#marcone</span>
+                            <span class="d-block">#fun</span>
+                        </div>
+
+                        <div class="col-2 d-flex align-items-center">
+                            <img src="img/eye.png" class="me-1" style="width: 25px;">
+                            <span>376</span>
+                        </div>
+                    </div>
                 </figure>
                 <figure class="col-12 col-md-6 col-lg-3 mt-3">
-                    <img src="img/u11.jpg" alt="vídeo">
+                    <!-- imagem maior -->
+                    <div class="col-12">
+                        <img src="img/u11.jpg" alt="vídeo" class="img-fluid">
+                    </div>
+                    <!-- abaixo da imagem maior -->
+                    <div class="row mt-1 align-items-center">
+                        <!-- ícone -->
+                        <div class="col-2 d-flex justify-content-start">
+                            <img class="img-fluid rounded-circle img-pequeninazinha" src="img/icon_usuario2.jpg"
+                                alt="vídeo">
+                        </div>
+                        <!-- textos -->
+                        <div class="col-8">
+                            <span class="d-block">#marcone</span>
+                            <span class="d-block">#fun</span>
+                        </div>
+
+                        <div class="col-2 d-flex align-items-center">
+                            <img src="img/eye.png" class="me-1" style="width: 25px;">
+                            <span>376</span>
+                        </div>
+                    </div>
                 </figure>
             </section>
             <section class="row">
                 <!-- 4x figure por linha -->
                 <figure class="col-12 col-md-6 col-lg-3 mt-3">
-                    <img src="img/u12.jpg" alt="vídeo">
+                    <!-- imagem maior -->
+                    <div class="col-12">
+                        <img src="img/u12.jpg" alt="vídeo" class="img-fluid">
+                    </div>
+                    <!-- abaixo da imagem maior -->
+                    <div class="row mt-1 align-items-center">
+                        <!-- ícone -->
+                        <div class="col-2 d-flex justify-content-start">
+                            <img class="img-fluid rounded-circle img-pequeninazinha" src="img/icon_usuario2.jpg"
+                                alt="vídeo">
+                        </div>
+                        <!-- textos -->
+                        <div class="col-8">
+                            <span class="d-block">#marcone</span>
+                            <span class="d-block">#fun</span>
+                        </div>
+
+                        <div class="col-2 d-flex align-items-center">
+                            <img src="img/eye.png" class="me-1" style="width: 25px;">
+                            <span>376</span>
+                        </div>
+                    </div>
                 </figure>
                 <figure class="col-12 col-md-6 col-lg-3 mt-3">
-                    <img src="img/u13.jpg" alt="vídeo">
+                    <!-- imagem maior -->
+                    <div class="col-12">
+                        <img src="img/u13.jpg" alt="vídeo" class="img-fluid">
+                    </div>
+                    <!-- abaixo da imagem maior -->
+                    <div class="row mt-1 align-items-center">
+                        <!-- ícone -->
+                        <div class="col-2 d-flex justify-content-start">
+                            <img class="img-fluid rounded-circle img-pequeninazinha" src="img/icon_usuario2.jpg"
+                                alt="vídeo">
+                        </div>
+                        <!-- textos -->
+                        <div class="col-8">
+                            <span class="d-block">#marcone</span>
+                            <span class="d-block">#fun</span>
+                        </div>
+
+                        <div class="col-2 d-flex align-items-center">
+                            <img src="img/eye.png" class="me-1" style="width: 25px;">
+                            <span>376</span>
+                        </div>
+                    </div>
                 </figure>
                 <figure class="col-12 col-md-6 col-lg-3 mt-3">
-                    <img src="img/u14.jpg" alt="vídeo">
+                    <!-- imagem maior -->
+                    <div class="col-12">
+                        <img src="img/u14.jpg" alt="vídeo" class="img-fluid">
+                    </div>
+                    <!-- abaixo da imagem maior -->
+                    <div class="row mt-1 align-items-center">
+                        <!-- ícone -->
+                        <div class="col-2 d-flex justify-content-start">
+                            <img class="img-fluid rounded-circle img-pequeninazinha" src="img/icon_usuario2.jpg"
+                                alt="vídeo">
+                        </div>
+                        <!-- textos -->
+                        <div class="col-8">
+                            <span class="d-block">#marcone</span>
+                            <span class="d-block">#fun</span>
+                        </div>
+
+                        <div class="col-2 d-flex align-items-center">
+                            <img src="img/eye.png" class="me-1" style="width: 25px;">
+                            <span>376</span>
+                        </div>
+                    </div>
                 </figure>
                 <figure class="col-12 col-md-6 col-lg-3 mt-3">
-                    <img src="img/u15.jpg" alt="vídeo">
+                    <!-- imagem maior -->
+                    <div class="col-12">
+                        <img src="img/u15.jpg" alt="vídeo" class="img-fluid">
+                    </div>
+                    <!-- abaixo da imagem maior -->
+                    <div class="row mt-1 align-items-center">
+                        <!-- ícone -->
+                        <div class="col-2 d-flex justify-content-start">
+                            <img class="img-fluid rounded-circle img-pequeninazinha" src="img/icon_usuario2.jpg"
+                                alt="vídeo">
+                        </div>
+                        <!-- textos -->
+                        <div class="col-8">
+                            <span class="d-block">#marcone</span>
+                            <span class="d-block">#fun</span>
+                        </div>
+
+                        <div class="col-2 d-flex align-items-center">
+                            <img src="img/eye.png" class="me-1" style="width: 25px;">
+                            <span>376</span>
+                        </div>
+                    </div>
                 </figure>
             </section>
             <section class="row">
                 <!-- 4x figure por linha -->
                 <figure class="col-12 col-md-6 col-lg-3 mt-3">
-                    <img src="img/u16.jpg" alt="vídeo">
+                    <!-- imagem maior -->
+                    <div class="col-12">
+                        <img src="img/u16.jpg" alt="vídeo" class="img-fluid">
+                    </div>
+                    <!-- abaixo da imagem maior -->
+                    <div class="row mt-1 align-items-center">
+                        <!-- ícone -->
+                        <div class="col-2 d-flex justify-content-start">
+                            <img class="img-fluid rounded-circle img-pequeninazinha" src="img/icon_usuario2.jpg"
+                                alt="vídeo">
+                        </div>
+                        <!-- textos -->
+                        <div class="col-8">
+                            <span class="d-block">#marcone</span>
+                            <span class="d-block">#fun</span>
+                        </div>
+
+                        <div class="col-2 d-flex align-items-center">
+                            <img src="img/eye.png" class="me-1" style="width: 25px;">
+                            <span>376</span>
+                        </div>
+                    </div>
                 </figure>
                 <figure class="col-12 col-md-6 col-lg-3 mt-3">
-                    <img src="img/u17.jpg" alt="vídeo">
+                    <!-- imagem maior -->
+                    <div class="col-12">
+                        <img src="img/u17.jpg" alt="vídeo" class="img-fluid">
+                    </div>
+                    <!-- abaixo da imagem maior -->
+                    <div class="row mt-1 align-items-center">
+                        <!-- ícone -->
+                        <div class="col-2 d-flex justify-content-start">
+                            <img class="img-fluid rounded-circle img-pequeninazinha" src="img/icon_usuario2.jpg"
+                                alt="vídeo">
+                        </div>
+                        <!-- textos -->
+                        <div class="col-8">
+                            <span class="d-block">#marcone</span>
+                            <span class="d-block">#fun</span>
+                        </div>
+
+                        <div class="col-2 d-flex align-items-center">
+                            <img src="img/eye.png" class="me-1" style="width: 25px;">
+                            <span>376</span>
+                        </div>
+                    </div>
                 </figure>
                 <figure class="col-12 col-md-6 col-lg-3 mt-3">
-                    <img src="img/u18.jpg" alt="vídeo">
+                    <!-- imagem maior -->
+                    <div class="col-12">
+                        <img src="img/u18.jpg" alt="vídeo" class="img-fluid">
+                    </div>
+                    <!-- abaixo da imagem maior -->
+                    <div class="row mt-1 align-items-center">
+                        <!-- ícone -->
+                        <div class="col-2 d-flex justify-content-start">
+                            <img class="img-fluid rounded-circle img-pequeninazinha" src="img/icon_usuario2.jpg"
+                                alt="vídeo">
+                        </div>
+                        <!-- textos -->
+                        <div class="col-8">
+                            <span class="d-block">#marcone</span>
+                            <span class="d-block">#fun</span>
+                        </div>
+
+                        <div class="col-2 d-flex align-items-center">
+                            <img src="img/eye.png" class="me-1" style="width: 25px;">
+                            <span>376</span>
+                        </div>
+                    </div>
                 </figure>
                 <figure class="col-12 col-md-6 col-lg-3 mt-3">
-                    <img src="img/u19.jpg" alt="vídeo">
+                    <!-- imagem maior -->
+                    <div class="col-12">
+                        <img src="img/u19.jpg" alt="vídeo" class="img-fluid">
+                    </div>
+                    <!-- abaixo da imagem maior -->
+                    <div class="row mt-1 align-items-center">
+                        <!-- ícone -->
+                        <div class="col-2 d-flex justify-content-start">
+                            <img class="img-fluid rounded-circle img-pequeninazinha" src="img/icon_usuario2.jpg"
+                                alt="vídeo">
+                        </div>
+                        <!-- textos -->
+                        <div class="col-8">
+                            <span class="d-block">#marcone</span>
+                            <span class="d-block">#fun</span>
+                        </div>
+
+                        <div class="col-2 d-flex align-items-center">
+                            <img src="img/eye.png" class="me-1" style="width: 25px;">
+                            <span>376</span>
+                        </div>
+                    </div>
                 </figure>
             </section>
         </div>
@@ -317,6 +729,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="script.js" class="astro-vvvwv3sm"></script>
 </body>
 
 </html>
