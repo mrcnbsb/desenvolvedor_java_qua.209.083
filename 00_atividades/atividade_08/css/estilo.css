@@ -4,7 +4,7 @@
 }
 
 .minha_logo{
-    width: 40px;   
+    width: 50px;   
 }
 
 .label-carousel{
@@ -13,24 +13,4 @@
 
 .sombra-carousel{
     box-shadow: 0px 10px 20px #16161d ;
-}
-
-
-.img-pequenina {
-    width: 40px;
-    height: auto;
-}
-.img-pequena {
-    width: 80px;
-    height: auto;
-}
-
-.img-media {
-    width: 200px;
-    height: auto;
-}
-
-.img-grande {
-    width: 400px;
-    height: auto;
 }

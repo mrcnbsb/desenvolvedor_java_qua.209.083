@@ -1,8 +1,8 @@
 const form = document.querySelector("form");
 
 const calcular = () => {
-    let x = document.querySelector("#x").value;
-    let y = document.querySelector("#y").value;
+    let x = parseInt(document.querySelector("#x").value);
+    let y = parseInt(document.querySelector("#y").value);
     let op = document.querySelector("#operador").value;
     let resultado = 0;
 
