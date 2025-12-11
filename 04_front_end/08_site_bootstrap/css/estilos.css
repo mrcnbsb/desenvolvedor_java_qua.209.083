@@ -1,36 +1,90 @@
-.sombra_navbar{
-    background-image: linear-gradient(to right, #FFA500, #FF0000);
-     box-shadow: 0px 5px 20px #16161d;
+/* ======= ESTILO GERAL ======= */
+body {
+    background: #f2f6fc;
+    font-family: "Segoe UI", Roboto, sans-serif;
+    color: #123456;
 }
 
-.minha_logo{
-    width: 40px;   
+/* ======= NAVBAR ======= */
+.bg-gradient-blue {
+    background: linear-gradient(135deg, #0d6efd, #1a3f7a);
 }
 
-.label-carousel{
-    text-shadow: 1px 1px 1px #000000;
+.sombra_navbar {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
 }
 
-.sombra-carousel{
-    box-shadow: 0px 10px 20px #16161d ;
+.minha_logo {
+    height: 50px;
 }
 
-
-.img-pequenina {
-    width: 40px;
-    height: auto;
-}
-.img-pequena {
-    width: 80px;
-    height: auto;
+/* ======= FORMULÁRIO ======= */
+.form-imc {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
 }
 
-.img-media {
-    width: 200px;
-    height: auto;
+.form-control, .form-select {
+    border-radius: 8px;
+    border: 1px solid #bcd0f4;
 }
 
-.img-grande {
-    width: 400px;
-    height: auto;
+.form-control:focus, .form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 8px rgba(13, 110, 253, 0.3);
+}
+
+/* ======= BOTÃO PRINCIPAL ======= */
+.botao-principal {
+    border-radius: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: bold;
+}
+
+/* ======= TITULOS ======= */
+h1, h2, h3 {
+    color: #1a3f7a;
+}
+
+/* ======= FOOTER ======= */
+footer {
+    border-color: #d1d9e6 !important;
+}
+
+footer span {
+    color: #345;
+}
+
+/* GRADIENTE DA NAVBAR */
+.bg-gradient-blue {
+  background: linear-gradient(135deg, #0d6efd 0%, #164a8a 60%, #0b2b55 100%);
+}
+
+/* Sombra e logo */
+.sombra_navbar {
+  box-shadow: 0 6px 18px rgba(10, 34, 60, 0.18);
+}
+
+.minha_logo {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Força contraste dos links (caso precise) */
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255,0.92);
+  transition: color .18s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: #dbe9ff;
+}
+
+/* Pequena responsividade para o texto da marca */
+@media (max-width: 576px) {
+  .navbar-brand span { display: none; } /* esconde o texto em telas bem pequenas */
 }
