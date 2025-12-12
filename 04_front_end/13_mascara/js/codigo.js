@@ -1,4 +1,7 @@
 const form = document.querySelector('form');
+const cpfMask = document.querySelector("#cpf");
+const telefoneMask = document.querySelector("#telefone");
+const cepMask = document.querySelector("#cep");
 
 const exibirInfo = () => {
     // declaração de variáveis locais
@@ -23,7 +26,47 @@ const exibirInfo = () => {
     form.reset();
 }
 
-form.addEventListener('submit', function(event){
+cpfMask.addEventListener('input', function () {
+    this.value = this.value
+        .replace(/\D/g, '')
+        .replace(/(\d{3})(\d)/, '$1.$2')
+        .replace(/(\d{3})(\d)/, '$1.$2')
+        .replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+});
+
+telefoneMask.addEventListener('input', function () {
+    let valor = this.value.replace(/\D/g, '');
+
+    if (valor.length > 10) {
+        // Celular
+        valor = valor.replace(/^(\d{2})(\d{5})(\d{4}).*/, '($1) $2-$3');
+    } else {
+        // Fixo
+        valor = valor.replace(/^(\d{2})(\d{4})(\d{4}).*/, '($1) $2-$3');
+    }
+    this.value = valor;
+});
+
+cepMask.addEventListener('input', function () {
+    this.value = this.value
+        .replace(/\D/g, '')
+        .replace(/(\d{5})(\d)/, '$1-$2');
+});
+
+form.addEventListener('submit', function (event) {
     event.preventDefault();
     exibirInfo();
+});
+
+document.addEventListener('keydown', function (event) {
+
+    if (event.ctrlKey && event.key === 'a') {
+        event.preventDefault(); // evita selecionar tudo
+        alert('Você pressionou Ctrl + A');
+    }
+
+});
+
+window.addEventListener('resize', function () {
+    alert('O tamanho da janela foi alterado!');
 });
