@@ -1,0 +1,67 @@
+:root {
+--cor-primaria: #3E3F29; /* verde escuro */
+--cor-secundaria: #7D8D86; /* verde acinzentado */
+--cor-destaque: #BCA88D; /* bege */
+--cor-fundo: #F1F0E4; /* off-white */
+}
+
+
+body {
+background-color: var(--cor-fundo);
+}
+
+
+/* Navbar */
+.navbar {
+background-color: var(--cor-primaria);
+}
+
+
+.navbar-brand, .nav-link {
+color: var(--cor-fundo) !important;
+}
+
+
+/* Cards */
+.card {
+border: none;
+background-color: #fff;
+box-shadow: 0 4px 8px rgba(0,0,0,.05);
+}
+
+
+.card-title {
+color: var(--cor-primaria);
+}
+
+
+/* Formulário */
+.form-label {
+color: var(--cor-primaria);
+font-weight: 500;
+}
+
+
+.form-control:focus {
+border-color: var(--cor-secundaria);
+box-shadow: 0 0 0 0.2rem rgba(125, 141, 134, 0.25);
+}
+
+
+.btn-custom {
+background-color: var(--cor-secundaria);
+color: #fff;
+border: none;
+}
+
+
+.btn-custom:hover {
+background-color: var(--cor-primaria);
+}
+
+
+/* Destaque */
+.badge-custom {
+background-color: var(--cor-destaque);
+color: var(--cor-primaria);
+}

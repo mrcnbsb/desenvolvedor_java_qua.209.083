@@ -1,4 +1,5 @@
 const form = document.querySelector("form");
+const cpfMask = document.querySelector("#cpf");
 const telefoneMask = document.querySelector("#telefone");
 const cepMask = document.querySelector("#cep");
 const pesquisaCep = document.querySelector("#cep");
@@ -11,7 +12,7 @@ const limpaFormularioCep = () => {
     document.querySelector("#uf").value = ("");
 }
 
-const meuCallBack = (conteudo) => {
+const meuCallback = (conteudo) => {
     if (!("erro" in conteudo)){
         document.querySelector("#logradouro").value = (conteudo.logradouro);
         document.querySelector("#cidade").value = (conteudo.localidade);
@@ -25,7 +26,61 @@ const meuCallBack = (conteudo) => {
     }
 }
 
-//TODO:funções de máscara de entrada e função pesquisa CEP
+// máscara para CPF
+cpfMask.addEventListener('input', function () {
+    this.value = this.value
+        .replace(/\D/g, '')
+        .replace(/(\d{3})(\d)/, '$1.$2')
+        .replace(/(\d{3})(\d)/, '$1.$2')
+        .replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+});
+
+// máscara para telefone
+telefoneMask.addEventListener('input', function () {
+    let valor = this.value.replace(/\D/g, '');
+    if (valor.length > 10) {
+        // Celular
+        valor = valor.replace(/^(\d{2})(\d{5})(\d{4}).*/, '($1) $2-$3');
+    } else {
+        // Fixo
+        valor = valor.replace(/^(\d{2})(\d{4})(\d{4}).*/, '($1) $2-$3');
+    }
+    this.value = valor;
+});
+
+// máscara para CEP
+cepMask.addEventListener('input', function () {
+    this.value = this.value
+        .replace(/\D/g, '')
+        .replace(/(\d{5})(\d)/, '$1-$2');
+});
+
+// blur, quando tira o foco do cep
+pesquisaCep.addEventListener('blur', function(){
+    let cep = document.querySelector("#cep").value.replace(/\D/g, "");
+    if (cep != ""){
+        // verifica se só números e se 8 dígitos
+        let validarCep = /^[0-9]{8}$/
+        if (validarCep.test(cep)){
+            document.querySelector('#cidade').value = "carregando...";
+            document.querySelector('#bairro').value = "carregando...";
+            document.querySelector('#logradouro').value = "carregando...";
+            document.querySelector('#complemento').value = "carregando...";
+            document.querySelector('#uf').value = "carregando...";
+
+            let script = document.createElement('script');
+            script.src = "https://viacep.com.br/ws/" + cep + "/json/?callback=meuCallback";
+
+            document.body.appendChild(script);
+        } else{
+            limpaFormularioCep();
+            alert("Formato do CEP é inválido.")
+        }
+    }
+    else{
+        limpaFormularioCep();
+    }
+});
 
 const exibirDados = () => {
     let nome = document.querySelector("#nome").value;
