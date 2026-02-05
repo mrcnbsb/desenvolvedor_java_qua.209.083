@@ -15,176 +15,38 @@
     <!-- fim header -->
 
     <!-- main -->
-     <!-- <main>
+    <main class="bg-light py-4">
         <div class="container">
-            <img src="img/logoHome.jpg" alt="home" />
-        </div>
-     </main> -->
-     <!-- fim da main -->
+            <h1>Meus Eventos</h1>
+            <hr>
 
-    
-    <!-- cards -->
-    <div class="container bg-body-tertiary">
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-4" style="margin: 5px;">
-                <div class="card" style="width: 20rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Nome Nome Nome</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Id</h6>
-                        <p class="card-text">Local: Aaaa aa Aaaaaa</p>
-                        <p class="card-text">Data: 00/00/0000</p>
-                        <p class="card-text">Hora: 00:00</p>
-                        <!-- <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a> -->
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 mb-3" th:each="evento : ${eventos}">
+
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title" th:text="${evento.nome}"></h5>
+
+                            <h6 class="card-subtitle mb-2 text-body-secondary">ID: <span th:text="${evento.idEvento}"></span></h6>
+
+                            <div class="card-text">Local: <span th:text="${evento.local}"></span></div>
+                            <div class="card-text">Data: <span th:text="${#temporals.format(evento.data, 'dd/MM/yyyy')}"></span></div>
+                            <div class="card-text">Hora: <span th:text="${evento.hora}"></span></div>
+
+                            <a href="#" class="card-link">Editar</a>
+                            <a href="#" class="card-link">Concluir</a>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4" style="margin: 5px;">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Nome Nome Nome</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Id</h6>
-                        <p class="card-text">Local: Aaaa aa Aaaaaa</p>
-                        <p class="card-text">Data: 00/00/0000</p>
-                        <p class="card-text">Hora: 00:00</p>
-                        <!-- <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a> -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4" style="margin: 5px;">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Nome Nome Nome</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Id</h6>
-                        <p class="card-text">Local: Aaaa aa Aaaaaa</p>
-                        <p class="card-text">Data: 00/00/0000</p>
-                        <p class="card-text">Hora: 00:00</p>
-                        <!-- <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a> -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4" style="margin: 5px;">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Nome Nome Nome</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Id</h6>
-                        <p class="card-text">Local: Aaaa aa Aaaaaa</p>
-                        <p class="card-text">Data: 00/00/0000</p>
-                        <p class="card-text">Hora: 00:00</p>
-                        <!-- <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a> -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4" style="margin: 5px;">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Nome Nome Nome</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Id</h6>
-                        <p class="card-text">Local: Aaaa aa Aaaaaa</p>
-                        <p class="card-text">Data: 00/00/0000</p>
-                        <p class="card-text">Hora: 00:00</p>
-                        <!-- <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a> -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4" style="margin: 5px;">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Nome Nome Nome</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Id</h6>
-                        <p class="card-text">Local: Aaaa aa Aaaaaa</p>
-                        <p class="card-text">Data: 00/00/0000</p>
-                        <p class="card-text">Hora: 00:00</p>
-                        <!-- <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a> -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4" style="margin: 5px;">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Nome Nome Nome</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Id</h6>
-                        <p class="card-text">Local: Aaaa aa Aaaaaa</p>
-                        <p class="card-text">Data: 00/00/0000</p>
-                        <p class="card-text">Hora: 00:00</p>
-                        <!-- <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a> -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4" style="margin: 5px;">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Nome Nome Nome</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Id</h6>
-                        <p class="card-text">Local: Aaaa aa Aaaaaa</p>
-                        <p class="card-text">Data: 00/00/0000</p>
-                        <p class="card-text">Hora: 00:00</p>
-                        <!-- <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a> -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4" style="margin: 5px;">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Nome Nome Nome</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Id</h6>
-                        <p class="card-text">Local: Aaaa aa Aaaaaa</p>
-                        <p class="card-text">Data: 00/00/0000</p>
-                        <p class="card-text">Hora: 00:00</p>
-                        <!-- <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a> -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4" style="margin: 5px;">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Nome Nome Nome</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Id</h6>
-                        <p class="card-text">Local: Aaaa aa Aaaaaa</p>
-                        <p class="card-text">Data: 00/00/0000</p>
-                        <p class="card-text">Hora: 00:00</p>
-                        <!-- <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a> -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4" style="margin: 5px;">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Nome Nome Nome</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Id</h6>
-                        <p class="card-text">Local: Aaaa aa Aaaaaa</p>
-                        <p class="card-text">Data: 00/00/0000</p>
-                        <p class="card-text">Hora: 00:00</p>
-                        <!-- <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a> -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4" style="margin: 5px;">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Nome Nome Nome</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Id</h6>
-                        <p class="card-text">Local: Aaaa aa Aaaaaa</p>
-                        <p class="card-text">Data: 00/00/0000</p>
-                        <p class="card-text">Hora: 00:00</p>
-                        <!-- <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a> -->
-                    </div>
+
                 </div>
             </div>
         </div>
-    </div>
-    <!-- fim cards -->
+    </main>
+
+    <!-- fim da main -->
+
+
+
     <!-- footer -->
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
