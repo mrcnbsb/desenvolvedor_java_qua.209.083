@@ -62,4 +62,19 @@ public class EventosController {
         return "edicao_sucesso";
     }
 
+    @RequestMapping("/confirmarExclusao/{idEvento}")
+    public ModelAndView confirmarExclusao(@PathVariable("idEvento") long idEvento){
+        Evento evento = csr.findByIdEvento(idEvento);
+        ModelAndView mv = new ModelAndView("excluir_evento");
+        mv.addObject("evento", evento);
+        return mv;
+    }
+
+    @RequestMapping("/excluirEvento")
+    public String excluirEvento(long idEvento){
+        Evento evento = csr.findByIdEvento(idEvento);
+        csr.delete(evento);
+        return "redirect:/";
+    }
+
 }
